@@ -1,0 +1,71 @@
+/*
+Copyright 2022 Adobe
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file in
+accordance with the terms of the Adobe license agreement accompanying it.
+*/
+@import '../../styles/variables';
+
+$userItemWidth: 240px;
+$userItemHeight: 200px;
+
+$userItemWidthMobile: 300px;
+$userItemHeightMobile: 250px;
+
+.user-items {
+  display: flex;
+  list-style: none;
+  margin-top: 1em;
+  padding: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: normal;
+}
+
+.user-item {
+  flex-basis: $userItemWidth;
+  margin: 0 0 2rem;
+  padding-right: 14px;
+}
+
+.user-item-image {
+  width: 100%;
+  height: $userItemHeight;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  margin-bottom: 7px;
+}
+
+.user-item-title {
+  font-weight: bold;
+  font-size: $font-size-medium;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.user-item-length {
+  float: left;
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+  .user-items {
+    justify-content: normal;
+  }
+
+  .user-item {
+    flex-basis: $userItemWidthMobile;
+  }
+
+  .user-item-image {
+    height: $userItemHeightMobile;
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .user-items {
+    justify-content: center;
+  }
+}

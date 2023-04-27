@@ -1,0 +1,34 @@
+# Filters a list of Adventures based on the activity
+#
+# Example Query Variables: 
+# {"activity": "Surfing"}
+
+query($activity: String!) {
+  adventureList(filter: {
+        activity: {
+          _expressions: [ { 
+          value: $activity 
+          _ignoreCase: true} ]
+        }
+  	}) {
+    items {
+      _path
+        slug
+        title
+        activity
+        price
+        tripLength
+        primaryImage {
+          ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+            mimeType
+            width
+            height
+          }
+      }
+    }
+  }
+}
+

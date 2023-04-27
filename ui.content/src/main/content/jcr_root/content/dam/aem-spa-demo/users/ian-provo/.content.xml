@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="228570c2-1f66-4da3-84ee-fc4674b96f4c">
+    <jcr:content
+        cq:name="ian-provo"
+        cq:parentPath="/content/dam/aem-spa-demo/users"
+        jcr:lastModified="{Date}2023-04-26T10:26:52.375+03:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Ian Provo"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2023-04-26T10:26:52.375+03:00">
+        <data
+            cq:model="/conf/aem-spa-demo/settings/dam/cfm/models/user"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                birthDay="{Date}1988-09-26T00:00:00.000Z"
+                birthDay_x0040_LastModified="{Date}2023-04-26T10:26:52.352+03:00"
+                firstName="Ian"
+                firstName_x0040_LastModified="{Date}2023-04-26T10:26:52.336+03:00"
+                lastName="Provo"
+                lastName_x0040_LastModified="{Date}2023-04-26T10:26:52.336+03:00"
+                profilePicture_x0040_LastModified="{Date}2023-04-26T10:24:27.577+03:00"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

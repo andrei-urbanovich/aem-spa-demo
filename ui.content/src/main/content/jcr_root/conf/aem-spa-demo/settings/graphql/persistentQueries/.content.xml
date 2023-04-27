@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content jcr:primaryType="nt:unstructured"/>
+    <adventure-by-slug
+        jcr:created="{Date}2022-05-31T20:01:36.006-07:00"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="graphql/persistent/query">
+        <jcr:content
+            jcr:data="{Binary}"
+            jcr:mimeType="text/html"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="graphql/persistent/query/content"/>
+    </adventure-by-slug>
+    <adventures-all
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="graphql/persistent/query">
+        <jcr:content
+            jcr:data="{Binary}"
+            jcr:lastModified="{Date}2022-05-31T20:25:03.605-07:00"
+            jcr:mimeType="text/html"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="graphql/persistent/query/content"/>
+    </adventures-all>
+    <adventures-by-activity
+        jcr:created="{Date}2022-06-01T10:43:38.015-07:00"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="graphql/persistent/query">
+        <jcr:content
+            jcr:data="{Binary}"
+            jcr:lastModified="{Date}2022-06-01T10:55:20.003-07:00"
+            jcr:mimeType="text/html"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="graphql/persistent/query/content"/>
+    </adventures-by-activity>
+    <users-all
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="graphql/persistent/query">
+        <jcr:content
+            jcr:data="{Binary}"
+            jcr:lastModified="{Date}2023-04-20T00:00:00.000-00:00"
+            jcr:mimeType="text/html"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="graphql/persistent/query/content"/>
+    </users-all>
+</jcr:root>

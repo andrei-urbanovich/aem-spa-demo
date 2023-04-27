@@ -1,0 +1,11 @@
+# Retrives a list of all Users
+  {
+    usersList {
+      items {
+        _path
+        firstName
+        lastName
+        birthDay
+      }
+    }
+  }
